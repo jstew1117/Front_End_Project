@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div id="logo">
+        <img class="img-fluid"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/1200px-Premier_League_Logo.svg.png">
+
+
+    </div>
+
+    <h2 class="text-center">
+        League
+    </h2>
+    <p> The button below will show the fixtures of upcoming matches in the Premier League through the next 3 weeks.</p>
+    <div>
+        <button onclick="getGame()" type="button" class="btn btn-secondary btn-lg btn-block">
+            Games
+        </button>
+    </div>
+
+    <div id="leagueInfo">
+
+    </div>
+
+    <div>
+        <h3 class="text-center">
+            Stats
+        </h3>
+        <p>Receive the statistics of any player around the world over the past ten seasons played!!!!</p>
+    </div>
+    <div>
+        <input id="player_search">
+        <button onclick="getStats()">Search</button>
+    </div>
+    <div id="playerStats">
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
